@@ -1,0 +1,26 @@
+[
+      {
+         "name": "Homer",
+         "Gender": "Male",
+         "Hair": "Bald",
+         "image": "/imgs/homer.jpg"
+      },
+      {
+         "name": "Bart",
+         "Gender": "Male",
+         "Hair": "Yellow",
+         "image": "/imgs/bart.jpg"
+      },
+      {
+         "name": "Marge",
+         "Gender": "Female",
+         "Hair": "Blue",
+         "image": "/imgs/marge.jpg"
+      },
+      {
+         "name": "Lisa",
+         "Gender": "Female",
+         "Hair": "Yellow",
+         "image": "/imgs/homer.jpg"
+      },
+]
