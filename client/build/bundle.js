@@ -19786,7 +19786,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var gameData = [{ id: 1, name: 'Homer', gender: 'Male', hair: 'Bald', image: '/imgs/homer.jpg' }, { id: 2, name: 'Bart', gender: 'Male', hair: 'Yellow', image: '/imgs/bart.jpg' }, { id: 3, name: 'Marge', gender: 'Female', hair: 'Blue', image: '/imgs/marge.jpg' }, { id: 4, name: 'Lisa', gender: 'Female', hair: 'Yellow', image: '/imgs/lisa.jpg' }];
+	var gameData = [{ id: 1, name: 'Homer', gender: 'Male', hair: 'Bald', image: 'images/homer.jpg' }, { id: 2, name: 'Bart', gender: 'Male', hair: 'Yellow', image: 'images/bart.jpg' }, { id: 3, name: 'Marge', gender: 'Female', hair: 'Blue', image: 'images/marge.jpg' }, { id: 4, name: 'Lisa', gender: 'Female', hair: 'Yellow', image: 'images/lisa.jpg' }];
 	
 	console.log(gameData[0].name);
 	
@@ -19825,7 +19825,7 @@
 	        _react2.default.createElement(
 	          'h1',
 	          null,
-	          'game box'
+	          'The Simpsons'
 	        ),
 	        _react2.default.createElement(_Card2.default, { obj: gameData[0] }),
 	        _react2.default.createElement(_Card2.default, { obj: gameData[1] }),
@@ -19844,7 +19844,7 @@
 /* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -19874,16 +19874,12 @@
 	  }
 	
 	  _createClass(Card, [{
-	    key: "render",
+	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        "div",
-	        { className: "card" },
-	        _react2.default.createElement(
-	          "h1",
-	          null,
-	          this.props.obj.name
-	        )
+	        'div',
+	        { className: 'card' },
+	        _react2.default.createElement('img', { className: 'card-img', src: this.props.obj.image, alt: 'card' })
 	      );
 	    }
 	  }]);

@@ -5,11 +5,10 @@ class Card extends React.Component{
 render (){
     return (
       <div className="card">
-        <h1>{this.props.obj.name}</h1>
+        <img className='card-img' src={this.props.obj.image} alt="card"/>
       </div>
     )
   }
 }         
-
 
 export default Card
